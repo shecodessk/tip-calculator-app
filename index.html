@@ -3,17 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <div class="logo"><img src="images/logo.svg" alt="logo" /></div>
+    <div class="tip-calculator">
+      <div class="left-container">
+        <label>Bill</label>
+        <input type="number" class="bill-input" placeholder="0" />
+        <label>Select Tip %</label>
+        <div class="tips-grid">
+          <div class="grid-item tip-5%">5%</div>
+          <div class="grid-item tip-10%">10%</div>
+          <div class="grid-item tip-15%">15%</div>
+          <div class="grid-item tip-25%">25%</div>
+          <div class="grid-item tip-50%">50%</div>
+          <div class="grid-item tip-custom">
+            <input type="number" placeholder="Custom" />
+          </div>
+        </div>
+        <label>Number of People</label>
+        <input placeholder="0" />
+      </div>
+      <div class="right-container">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p>/person</p>
+          </div>
+          <div class="amount">$0.00</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p>/person</p>
+          </div>
+          <div class="amount">$0.00</div>
+        </div>
+        Re sn>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
