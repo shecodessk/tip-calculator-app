@@ -4,44 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <title>Tip calculator app</title>
   </head>
   <body>
     <div class="logo"><img src="images/logo.svg" alt="logo" /></div>
     <div class="tip-calculator">
-      <div class="left-container">
-        <label>Bill</label>
-        <input type="number" class="bill-input" placeholder="0" />
-        <label>Select Tip %</label>
+      <div class="flex-container left-container">
+        <div class="bill-label flex">
+          <label for="bills">Bill</label>
+          <input type="number" class="bill-input" id="bills" placeholder="0" />
+        </div>
+        <label for="tips">Select Tip %</label>
         <div class="tips-grid">
-          <div class="grid-item tip-5%">5%</div>
-          <div class="grid-item tip-10%">10%</div>
-          <div class="grid-item tip-15%">15%</div>
-          <div class="grid-item tip-25%">25%</div>
-          <div class="grid-item tip-50%">50%</div>
-          <div class="grid-item tip-custom">
-            <input type="number" placeholder="Custom" />
-          </div>
+          <button class="grid-item tip-5%">5%</button>
+          <button class="grid-item tip-10%">10%</button>
+          <button class="grid-item tip-15%">15%</button>
+          <button class="grid-item tip-25%">25%</button>
+          <button class="grid-item tip-50%">50%</button>
+          <input class="tip-custom" type="number" placeholder="Custom" />
         </div>
-        <label>Number of People</label>
-        <input placeholder="0" />
+        <div class="people-label flex">
+          <label for="people">Number of People</label>
+          <input
+            type="number"
+            class="people-input"
+            id="people"
+            placeholder="0"
+          />
+        </div>
       </div>
-      <div class="right-container">
-        <div class="tip-amount">
-          <div class="text">
-            <p>Tip Amount</p>
-            <p>/person</p>
+      <div class="flex-container right-container">
+        <div class="text">
+          <div>
+            <p class="amount-text">Tip Amount</p>
+            <p class="person">/ person</p>
           </div>
-          <div class="amount">$0.00</div>
+          <div class="amount-number" id="tip-amount">$0.00</div>
         </div>
-        <div class="total">
-          <div class="text">
-            <p>Total</p>
-            <p>/person</p>
+        <div class="text">
+          <div>
+            <p class="amount-text">Total</p>
+            <p class="person">/ person</p>
           </div>
-          <div class="amount">$0.00</div>
+          <div class="amount-number" id="total-amount">$0.00</div>
         </div>
-        Re sn>
+        <div class="reset-button"><button class="reset-btn">RESET</button></div>
       </div>
     </div>
     <script src="script.js"></script>

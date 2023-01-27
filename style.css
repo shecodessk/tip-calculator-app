@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-
 * {
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
   }
@@ -10,29 +10,35 @@
   height: 100vh;
   width: 100%;
   background-color: hsl(185, 41%, 84%);
-  font-family: 'Space Mono', monospace;
 }
-
   .logo{
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
 .tip-calculator{
+  margin-left:350px;
   background-color: hsl(0, 0%, 100%);
+  width: 700px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left:50px;
-  margin-right: 50px;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
-
-
+  gap: 2rem;
+}
+.flex-container{
+  flex: 1;
+  border-radius: 10px;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
 }
 label{
   color:hsl(183, 100%, 15%);
   font-family: 700;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: bolder;
 }
 input{
   border: none;
@@ -43,9 +49,8 @@ input{
   background-position: 10px;
   text-align: right;
   color: hsl(183, 100%, 15%);
-  font-family: 'Space Mono', monospace;
-  font-size: 1rem;
-  
+  font-size: 0.9rem;
+  font-weight: bolder;
 }
 
 .bill-input{
@@ -56,10 +61,65 @@ input{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 18px;
+  grid-gap: 15px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
 }
 .grid-item{
-  
   background-color: hsl(183, 100%, 15%);
   color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  padding: 5px;
+}
+.tip-custom{
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  color: white;
+  text-align: center;
+  padding:0;
+}
+.right-container{
+  background-color:hsl(183, 100%, 15%);
+  padding: 40px;
+  
+}
+.people-input{
+  background-image: url("images/icon-person.svg");;
+}
+.text{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+
+}
+.amount-text{
+  color: hsl(0, 0%, 100%);
+}
+.amount-number{
+  text-align: right;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: hsl(172, 67%, 45%);
+}
+.person{
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+.reset-button{
+  margin-top: 100px;
+}
+.reset-btn{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  opacity:0.2;
+
+  font-size: 1rem;
 }
